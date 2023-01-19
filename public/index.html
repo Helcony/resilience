@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./assets/logo.png">
+    <title>Registro</title>
+</head>
+<body>
+    <div class="container">
+        <section class="forms">
+            <form action="/api/user" onsubmit="submitFunctions()" method="POST">
+                <div class="logo-container">
+                    <img class="logo" src="./assets/logo.png" alt="Logo Resilience eXperts">
+                </div>
+                <h1>Resilience Quick Maturity Assessment</h1>
+                <div class="a">
+                    <div class="input-div">
+                        <label for="nome">Nome completo*</label>
+                        <input autocomplete="off" type="text" id="nome" name="nome" required>
+                    </div>
+                    <div class="input-div">
+                        <label for="nomeEmpresa">Nome da empresa</label>
+                        <input autocomplete="off" type="text" id="nomeEmpresa" name="nomeEmpresa" >
+                    </div>
+                </div>
+                <div class="b">
+                    <div class="input-div">
+                        <label for="tel">Número de telefone*</label>
+                        <input autocomplete="off" type="tel" id="tel" name="tel" required>
+                    </div>
+                    <div class="input-div">
+                        <label for="email">Email*</label>
+                        <input autocomplete="off" type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                <button name="submit" type="submit">Avançar</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
